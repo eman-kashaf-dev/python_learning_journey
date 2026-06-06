@@ -1,0 +1,46 @@
+name = "ada nelson"
+# 'name' is a variable (a label pointing to a value). 
+# PEP 8 style guide: variable names should always be lowercase, using snake_case for multiple words.
+# Text enclosed in single or double quotes creates a String data type.
+
+#the title = method (an action that python performs on a piece of data)
+# the dot indicates to act it on variable 
+print (name.title())
+print (name.upper())
+print (name.lower())
+# .title() is a method (a function belonging to a specific object type).
+# The dot (.) operator accesses the method, and the parentheses () execute it.
+# .lower() ensures uniform casing, which is critical for standardizing data storage and comparisons.
+
+#using variable in a string = f string (f-format: replace variable by value)
+first_name = "ada"
+last_name = "Nelson"
+full_name = f"{first_name} {last_name}"
+print (full_name.title())
+message = f"hello {full_name}"
+print (message)
+
+#WHITE SPACE 
+print ("python")
+print ("\tpython")
+# \t is used for tabs
+print ("languages: python, java, html ")
+print ("languages: \n\tpython \t\njava \t\nhtml")
+# \n suggests a newline
+#the order of \n \t is important 
+
+#STRIPPING WHITESPACE 
+fav_lang = ' python '
+fav_lang.rstrip()
+#rstrip() does not change the original string — it returns a new string with right-side spaces removed
+# , so you must store it in a variable or print it to see the result.
+fav_lang.lstrip() #for left side
+fav_lang.strip() #for both
+
+
+#PREFIX REM
+url = 'www.nasa.com'
+url.removeprefix('www.') 
+print (" \n url") # mistake = anything in qoute is string and not variable 
+print ("\n", url)
+print (url.removeprefix('www.'))
